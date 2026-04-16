@@ -24,7 +24,7 @@ services:
     # ── Secrets from .env — never hardcoded ───────────────────────────────────
     environment:
       - SPRING_PROFILES_ACTIVE=dev
-      - JWT_SECRET=${JWT_SECRET}
+      - JWT_SECRET=dummysecret123456789
       - DB_URL=${DB_URL:-jdbc:h2:mem:emsdb;DB_CLOSE_DELAY=-1}
       - DB_USER=${DB_USER:-sa}
       - DB_PASSWORD=${DB_PASSWORD:-}
